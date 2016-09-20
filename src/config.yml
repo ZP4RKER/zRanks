@@ -1,0 +1,7 @@
+##  %prefix% = player's prefix
+##  %displayName% = player's display name
+##  %%message% = the message
+##  Colors allowed using §(identifier) i.e §7 = Gray
+chatFormat: '%prefix% §r%displayName% §r: %message%'
+prefixFormat: '§7[%prefix%§7]'
+timedRanks-enabled: false
