@@ -1,9 +1,9 @@
-package zplugin.zranks.commands;
+package com.zp4rker.zranks.commands;
 
-import zplugin.zranks.api.PlayerData;
-import zplugin.zranks.config.Config;
-import zplugin.zranks.config.ConfigManager;
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.config.ConfigManager;
+import com.zp4rker.zranks.zRanks;
+import com.zp4rker.zranks.api.PlayerData;
+import com.zp4rker.zranks.config.Config;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

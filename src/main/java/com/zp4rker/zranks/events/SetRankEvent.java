@@ -1,4 +1,4 @@
-package zplugin.zranks.events;
+package com.zp4rker.zranks.events;
 
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;

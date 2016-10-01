@@ -1,11 +1,11 @@
-package zplugin.zranks.config;
+package com.zp4rker.zranks.config;
 
 import java.io.File;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Set;
 
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.zRanks;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;

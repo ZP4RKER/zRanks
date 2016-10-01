@@ -1,4 +1,4 @@
-package zplugin.zranks.api;
+package com.zp4rker.zranks.api;
 
 import java.util.ArrayList;
 import java.util.List;

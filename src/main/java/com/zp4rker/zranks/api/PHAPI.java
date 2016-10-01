@@ -1,6 +1,6 @@
-package zplugin.zranks.api;
+package com.zp4rker.zranks.api;
 
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.zRanks;
 
 public class PHAPI {
 

@@ -1,9 +1,9 @@
-package zplugin.zranks.commands;
+package com.zp4rker.zranks.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.zRanks;
 
 public class AdminCommands implements CommandExecutor {
 

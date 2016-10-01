@@ -1,6 +1,6 @@
-package zplugin.zranks.listeners;
+package com.zp4rker.zranks.listeners;
 
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.zRanks;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

@@ -1,11 +1,11 @@
-package zplugin.zranks.api;
+package com.zp4rker.zranks.api;
 
 
+import com.zp4rker.zranks.config.ConfigManager;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import zplugin.zranks.config.Config;
-import zplugin.zranks.config.ConfigManager;
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.config.Config;
+import com.zp4rker.zranks.zRanks;
 
 public class TimedRanks {
 

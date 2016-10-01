@@ -1,4 +1,4 @@
-package zplugin.zranks.api;
+package com.zp4rker.zranks.api;
 
 import com.avaje.ebean.validation.NotEmpty;
 import com.avaje.ebean.validation.NotNull;

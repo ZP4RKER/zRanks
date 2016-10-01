@@ -2,7 +2,7 @@ name: zRanks
 version: 1.0
 author: zPlugins
 description: A simple permissions & chat management plugin
-main: zplugin.zranks.zRanks
+main: com.zp4rker.zranks.zRanks
 database: true
 commands:
     zranks:

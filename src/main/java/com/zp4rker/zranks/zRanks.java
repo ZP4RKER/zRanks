@@ -1,13 +1,13 @@
-package zplugin.zranks;
+package com.zp4rker.zranks;
 
+import com.zp4rker.zranks.api.*;
+import com.zp4rker.zranks.commands.*;
+import com.zp4rker.zranks.config.ConfigManager;
+import com.zp4rker.zranks.listeners.PlayerJoinListener;
 import org.bukkit.Bukkit;
-import zplugin.zranks.api.*;
-import zplugin.zranks.config.Config;
-import zplugin.zranks.config.ConfigManager;
-import zplugin.zranks.listeners.PlayerChatListener;
-import zplugin.zranks.listeners.PlayerJoinListener;
+import com.zp4rker.zranks.config.Config;
+import com.zp4rker.zranks.listeners.PlayerChatListener;
 import org.bukkit.plugin.java.JavaPlugin;
-import zplugin.zranks.commands.*;
 
 import java.util.ArrayList;
 import java.util.List;

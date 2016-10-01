@@ -1,8 +1,8 @@
-package zplugin.zranks.api;
+package com.zp4rker.zranks.api;
 
-import zplugin.zranks.config.Config;
-import zplugin.zranks.config.ConfigManager;
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.config.ConfigManager;
+import com.zp4rker.zranks.config.Config;
+import com.zp4rker.zranks.zRanks;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachment;

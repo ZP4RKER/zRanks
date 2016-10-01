@@ -1,6 +1,6 @@
-package zplugin.zranks.commands;
+package com.zp4rker.zranks.commands;
 
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.zRanks;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

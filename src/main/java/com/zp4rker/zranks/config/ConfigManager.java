@@ -1,4 +1,4 @@
-package zplugin.zranks.config;
+package com.zp4rker.zranks.config;
 
 
 import java.io.BufferedReader;
@@ -13,7 +13,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
 
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.zRanks;
 
 public class ConfigManager {
     private zRanks plugin;

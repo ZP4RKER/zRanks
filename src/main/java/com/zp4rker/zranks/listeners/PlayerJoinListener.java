@@ -1,13 +1,13 @@
-package zplugin.zranks.listeners;
+package com.zp4rker.zranks.listeners;
 
+import com.zp4rker.zranks.config.ConfigManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import zplugin.zranks.api.PlayerData;
-import zplugin.zranks.config.Config;
-import zplugin.zranks.config.ConfigManager;
-import zplugin.zranks.zRanks;
+import com.zp4rker.zranks.api.PlayerData;
+import com.zp4rker.zranks.config.Config;
+import com.zp4rker.zranks.zRanks;
 
 
 @SuppressWarnings("unused")
