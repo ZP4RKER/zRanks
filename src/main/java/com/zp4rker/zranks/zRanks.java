@@ -20,12 +20,6 @@ public class zRanks extends JavaPlugin {
 
     public void onEnable() {
 
-        if (getServer().getPluginManager().isPluginEnabled("MVdWPlaceholderAPI")) {
-
-            new PHAPI(this).enablePlaceHolders();
-
-        }
-
         // Configs
         ConfigManager manager = new ConfigManager(this);
         Config ranks;
@@ -64,7 +58,7 @@ public class zRanks extends JavaPlugin {
         setupDatabase();
 
         // Check for Updates
-        checkVersions = Bukkit.getServer().getScheduler().scheduleAsyncRepeatingTask(this, new Runnable() {
+        checkVersions = Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
             @Override
             public void run() {
                 if (!isNewVersion) {

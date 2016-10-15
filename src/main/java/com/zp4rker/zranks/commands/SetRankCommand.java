@@ -13,7 +13,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
-@SuppressWarnings("unused")
 public class SetRankCommand implements CommandExecutor {
 
     zRanks plugin;
@@ -26,6 +25,7 @@ public class SetRankCommand implements CommandExecutor {
         ranks = manager.getNewConfig("ranks.yml");
     }
 
+    @SuppressWarnings("deprecation")
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("setrank")) {
             if (sender instanceof ConsoleCommandSender) {
@@ -41,7 +41,7 @@ public class SetRankCommand implements CommandExecutor {
                             plugin.getDatabase().save(playerData);
                             sender.sendMessage("§6Added §r" + player.getDisplayName() + " §6to the rank §2" + rank);
                             player.sendMessage("§6You were added to the rank §2" + rank);
-                            Perm.reloadPerms();
+                            new Perm(plugin).reloadPerms();
                             return true;
                         } else {
                             sender.sendMessage("§4That rank does not exist!");
@@ -56,7 +56,7 @@ public class SetRankCommand implements CommandExecutor {
                                 playerData.setRank(rank);
                                 plugin.getDatabase().save(playerData);
                                 sender.sendMessage("§6Added §r" + offlinePlayer.getName() + " §6to the rank §2" + rank);
-                                Perm.reloadPerms();
+                                new Perm(plugin).reloadPerms();
                                 return true;
                             } else {
                                 sender.sendMessage("§4That rank does not exist!");
@@ -86,7 +86,7 @@ public class SetRankCommand implements CommandExecutor {
                                 sender.sendMessage("§6Added §r" + target.getDisplayName() + " §6to the rank §2" + rank);
                                 target.sendMessage("§6You were added to the rank §2" + rank);
                             }
-                            Perm.reloadPerms();
+                            new Perm(plugin).reloadPerms();
                             return true;
                         } else {
                             sender.sendMessage("§4That rank does not exist!");
@@ -101,7 +101,7 @@ public class SetRankCommand implements CommandExecutor {
                                 playerData.setRank(rank);
                                 plugin.getDatabase().save(playerData);
                                 sender.sendMessage("§6Added §r" + offlinePlayer.getName() + " §6to the rank §2" + rank);
-                                Perm.reloadPerms();
+                                new Perm(plugin).reloadPerms();
                                 return true;
                             } else {
                                 sender.sendMessage("§4That rank does not exist!");

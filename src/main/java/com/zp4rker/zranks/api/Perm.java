@@ -9,7 +9,6 @@ import org.bukkit.permissions.PermissionAttachment;
 
 import java.util.HashMap;
 
-@SuppressWarnings("unused")
 public class Perm {
 
     private static zRanks plugin;
@@ -17,7 +16,7 @@ public class Perm {
     private static Config ranks;
 
     public Perm(zRanks plugin) {
-        this.plugin = plugin;
+        Perm.plugin = plugin;
         manager = new ConfigManager(plugin);
     }
 
@@ -33,7 +32,7 @@ public class Perm {
         }
     }
 
-    public static void reloadPerms() {
+    public void reloadPerms() {
 
         resetPerms();
 

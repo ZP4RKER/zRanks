@@ -10,7 +10,6 @@ import com.zp4rker.zranks.config.Config;
 import com.zp4rker.zranks.zRanks;
 
 
-@SuppressWarnings("unused")
 public class PlayerJoinListener implements Listener {
 
     zRanks plugin;
