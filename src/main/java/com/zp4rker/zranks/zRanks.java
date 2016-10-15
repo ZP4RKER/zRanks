@@ -15,8 +15,6 @@ import java.util.List;
 public class zRanks extends JavaPlugin {
 
     public Methods m;
-    private boolean isNewVersion = false;
-    private int checkVersions;
 
     public void onEnable() {
 
@@ -56,27 +54,6 @@ public class zRanks extends JavaPlugin {
 
         // Setup Databse
         setupDatabase();
-
-        // Check for Updates
-        checkVersions = Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
-            @Override
-            public void run() {
-                if (!isNewVersion) {
-                    String version = getDescription().getVersion();
-                    if (m.getLatestVersion() != version) {
-                        if (Double.parseDouble(version) < Double.parseDouble(m.getLatestVersion())) {
-                            isNewVersion = true;
-                        }
-                    }
-                } else {
-                    getLogger().info("A new version of zRanks is available!");
-                    cancelEvent(checkVersions);
-                }
-            }
-        }, 0, 432000);
-        if (!isNewVersion) {
-            getLogger().info("You have the latest version of zRanks!");
-        }
 
         // Check if timedRanks is enabled
         if (getConfig().getBoolean("timedRanks-enabled")) {

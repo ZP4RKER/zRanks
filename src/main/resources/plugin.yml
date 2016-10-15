@@ -6,7 +6,7 @@ main: com.zp4rker.zranks.zRanks
 database: true
 commands:
     zranks:
-        usage: §2/zranks <RELOAD|UPDATE>
+        usage: §2/zranks <RELOAD>
         aliases: zr
         description: Reloads the server
         permission: zranks.admin
